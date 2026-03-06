@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
 
 export const authAPI = {
   login: async (emailAddress: string, password: string) => {
